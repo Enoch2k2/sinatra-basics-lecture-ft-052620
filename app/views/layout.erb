@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="/stylesheets/main.css" />
   </head>
   <body>
-    <div class="wrapper">
 
-        <%= yield %>
+    <nav>
+      <ul>
+        <li><a href="/">Welcome</a></li>
+        <li><a href="/hello">Hello</a></li>
+      </ul>
+    </nav>
 
-      <footer class="branding">
-        <small>&copy; 2020 <strong>SinatraBasicsLecture</strong></small>
-      </footer>
-    </div>
+    <%= yield %>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <!--[if lt IE 7]>

@@ -11,4 +11,9 @@ class ApplicationController < Sinatra::Base
     erb :welcome
   end
 
+  get "/hello" do
+    @greeting = "Hai!"
+    erb :hello
+  end
+
 end
