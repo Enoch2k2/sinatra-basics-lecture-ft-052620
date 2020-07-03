@@ -1,0 +1,8 @@
+<h1>Todo List</h1>
+
+<% @todos.each do |todo| %>
+  <p>---</p>
+  <p>Title: <%= todo.title %></p>
+  <p>Completed: <%= todo.completed ? "Completed" : "Not Completed" %></p>
+  <p><a href="/todos/<%= todo.id %>">View More Details</a></p>
+<% end %>
